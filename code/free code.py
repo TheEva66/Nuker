@@ -8,6 +8,43 @@ from discord import Permissions
 from colorama import Fore, Style
 import subprocess, requests, time, os
 
+import subprocess, requests, time, os
+def vcheck():
+    
+    
+    
+
+    version = "1.0.1"
+    r = requests.get('https://pastebin.com/K2Zs6qzW') # Paste your URL  e.g(https://pastebin.com)
+
+    try:
+        check = r.text
+        if version in check:
+            ver = 1
+            pass
+        else:
+            ver = 0
+    except:
+        
+        
+        
+        ver = 2
+    
+    return ver
+
+ver = vcheck()
+if ver == 1:
+  pass
+elif ver == 0:
+  print("out of date please update")
+  time.sleep(30)
+  quit()
+else:
+  print("server error please try again later.")
+  time.sleep(1)
+  print("make sure you are connected to the internet")
+  time.sleep(30)
+  quit()
 print ()
 intents = discord.Intents.default()
 intents.members = True
