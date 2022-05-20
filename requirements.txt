@@ -1,5 +1,0 @@
-requests
-discord
-discord.py
-asyncio
-colorama
