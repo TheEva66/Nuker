@@ -8,8 +8,13 @@ https://discord.gg/TfZgEKCgXw
 
 very simple 
 
-python 3.5-3.10 required
+click on HWID.exe to get your hwid
 
-pip3 install -r requirements.txt
+give it to me in the discord when you pay to be authorised
+(only one machine per license)
 
-start nuker 
+
+if you want the free version just click free.exe
+
+
+my code for the free version and the HWID getter is in the folder called code
