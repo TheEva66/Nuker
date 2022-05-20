@@ -7,7 +7,7 @@ import time
 from discord import Permissions
 from colorama import Fore, Style
 import subprocess, requests, time, os
-import auth
+from Check import auth
 
 print ()
 intents = discord.Intents.default()
@@ -16,9 +16,9 @@ intents.messages = True
 intents.presences = True
 
 res = (auth.check())
-print (res)
+
 if res == 1:
-    print ("verified")
+    pass
 else: 
     print("[ERROR] You gotta pay")
     print()
